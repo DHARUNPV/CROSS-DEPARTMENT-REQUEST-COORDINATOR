@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-slate-50 text-gov-navy font-sans antialiased;
+}
+
+select {
+  font-size: 18px;
+}
+
+option {
+  font-size: 18px;
+  padding: 10px;
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 bg-gov-blue text-white rounded-lg font-medium hover:bg-blue-700 transition;
+  }
+  .btn-secondary {
+    @apply px-4 py-2 bg-slate-200 text-gov-navy rounded-lg font-medium hover:bg-slate-300 transition;
+  }
+  .card {
+    @apply bg-white rounded-xl shadow-sm border border-slate-200 p-6;
+  }
+  .input-field {
+    @apply w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-gov-blue focus:border-transparent;
+  }
+}
